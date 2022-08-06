@@ -12,7 +12,7 @@ export default function Nav() {
         <>
         <header className="w-screen flex justify-center pt-6 bg-white">
             <div className="lg:w-[940px] w-screen mx-2 lg:mx-0">
-                <div className="font-serif flex items-center justify-between">
+                <div className="font-serif flex items-center justify-between pr-[20px] lg:pr-0">
                     <div className="flex items-center">
                         <p className="font-bold w-[180px] text-4xl lg:text-4xl mr-3 text-center">Mia's Catcher</p>
                         <p className="text-gray-400 hidden lg:block">Quality Dream Catchers</p>
@@ -26,7 +26,7 @@ export default function Nav() {
                             <div></div>
                             <span className="tracking-wide">user@miadream.com</span>
                         </div>
-                        <div className="justify-self-end">
+                        <div>
                             <Cart size={20}/>
                         </div>
                     </div>
@@ -37,7 +37,7 @@ export default function Nav() {
                         <div className={bar ? "w-4 h-0.5 bg-white":"w-4 h-0.5 bg-gray-800"}></div>
                         <div className={bar ? "w-4 h-0.5 bg-white":"w-4 h-0.5 bg-gray-800"}></div>
                     </div>
-                    <nav className={bar?"h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[-1] lg:z-auto translate-y-[120px] lg:translate-y-0 transition-all":"h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[-1] lg:z-auto translate-y-[-80px] lg:translate-y-0 transition-all"}>
+                    <nav className={bar?"bg-white h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[-1] lg:z-auto translate-y-[120px] lg:translate-y-0 transition-all":"h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[-1] lg:z-auto translate-y-[-80px] lg:translate-y-0 transition-all bg-white"}>
                         <a href="#" className="flex items-center p-3 lg:px-4 font-bold hover:text-black">Home</a>
                         <a href="#" className="flex items-center p-3 lg:px-4 font-bold hover:text-black">Shop</a>
                         <a href="#" className="flex items-center p-3 lg:px-4 font-bold hover:text-black">Contact</a>

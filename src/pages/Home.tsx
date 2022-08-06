@@ -1,4 +1,5 @@
 //components
+import Footer from "../components/Footer";
 import Nav from "../components/Nav";
 
 //images and icons
@@ -9,6 +10,7 @@ export default function Home() {
         <>
         
             <Nav />
+            <Footer />
         </>
     )
 }
