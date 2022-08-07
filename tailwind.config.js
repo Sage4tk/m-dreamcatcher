@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'landing-img': 'url("../src/images/dreamcatcher_land.jpg")'
+      }
+    },
   },
   plugins: [],
 }

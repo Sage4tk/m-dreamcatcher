@@ -7,9 +7,11 @@ import landing from "../images/dreamcatcher_land.jpg";
 
 export default function Home() {
     return (
-        <>
-        
+        <>  
             <Nav />
+            <div className="w-screen max-w-full h-screen  bg-landing-img bg-contain overflow-x-hidden">
+
+            </div>
             <Footer />
         </>
     )
