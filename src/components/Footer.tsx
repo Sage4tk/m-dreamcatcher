@@ -1,6 +1,6 @@
 import { Instagram, Facebook, Twitter } from "react-bootstrap-icons"
 
-export default function Footer() {
+const Footer:React.FC = () => {
     return (
         <>
         <footer className="w-screen bg-[#212127] text-white px-8 py-12">
@@ -10,7 +10,7 @@ export default function Footer() {
                     <a className="my-[8px] md:my-0 md:mx-8" href="">Shop</a>
                     <a href="">Contact</a>
                 </div>
-                <div className="flex font-serif mt-[16px] md:mt-[0px]">
+                <div className="flex font-serif mt-[20px] md:mt-[0px]">
                     <p className="mr-2">Follow us on:</p>
                     <Facebook size={22} />
                     <Instagram className="mx-2" size={22} />
@@ -22,3 +22,5 @@ export default function Footer() {
         </>
     )
 }
+
+export default Footer;
