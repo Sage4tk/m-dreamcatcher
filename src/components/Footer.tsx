@@ -3,6 +3,13 @@ import { Instagram, Facebook, Twitter } from "react-bootstrap-icons"
 const Footer:React.FC = () => {
     return (
         <>
+        <div className="w-screen font-serif flex flex-col items-center border-t-[1px] md:flex-row md:justify-center border-gray-100 p-16">
+            <p className="text-gray-400 mb-2 md:mb-[0rem] md:mr-16">Sign up to our mailing list</p>
+            <form>
+                <input className="border-2 border-r-0 border-gray-100 px-[12px] py-[8px] focus:border-blue-400 focus:outline-none" type="text" placeholder="Sing up now"/>
+                <input className="font-sans text-white bg-black px-[12px] py-[10px]" type="submit" value="Sign Up" />
+            </form>
+        </div>
         <footer className="w-screen bg-[#212127] text-white px-8 py-12">
             <div className="flex flex-col md:flex-row justify-between">
                 <div className="font-bold flex flex-col md:flex-row">

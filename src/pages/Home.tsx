@@ -1,6 +1,10 @@
 //components
 import Footer from "../components/Footer";
 import Nav from "../components/Nav";
+import LandingCard from "../components/LandingCard";
+
+//data
+import products from "../data/products";
 
 const Home:React.FC = () => {
     return (
@@ -35,12 +39,9 @@ const Home:React.FC = () => {
                         <div className="w-[60px] h-[0.5px] bg-black absolute bottom-0"></div>
                     </div>
                     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
-                        <div className="h-[150px] bg-black"></div>
-                        <div className="h-[150px] bg-black"></div>
-                        <div className="h-[150px] bg-black"></div>
-                        <div className="h-[150px] bg-black"></div>
-                        <div className="h-[150px] bg-black"></div>
-                        <div className="h-[150px] bg-black"></div>
+                        <LandingCard product={products[0].product} price={products[0].price} img={products[0].img} />
+                        <LandingCard product={products[0].product} price={products[0].price} img={products[0].img} />
+                        <LandingCard product={products[0].product} price={products[0].price} img={products[0].img} />
                     </div>
                 </div>
             </div>
