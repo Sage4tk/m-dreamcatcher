@@ -1,14 +1,17 @@
-//import css
-import "bootstrap/dist/css/bootstrap.min.css";
+import { HashRouter, Route, Routes } from "react-router-dom";
 
 //test
 import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <>
-      <Home />
-    </>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
