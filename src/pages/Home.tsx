@@ -38,7 +38,7 @@ const Home:React.FC = () => {
                     <div className="h-[16px] flex justify-center relative mb-16">
                         <div className="w-[60px] h-[0.5px] bg-black absolute bottom-0"></div>
                     </div>
-                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
+                    <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 px-4">
                         <LandingCard product={products[0].product} price={products[0].price} img={products[0].img} />
                         <LandingCard product={products[0].product} price={products[0].price} img={products[0].img} />
                         <LandingCard product={products[0].product} price={products[0].price} img={products[0].img} />
