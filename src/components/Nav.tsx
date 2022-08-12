@@ -1,4 +1,4 @@
-
+import { NavLink } from "react-router-dom";
 
 import { useState } from "react"
 import { Cart } from "react-bootstrap-icons"
@@ -7,6 +7,11 @@ const Nav:React.FC = () => {
 
     //open and close nav bar when viewport in phone
     const [bar, setBar] = useState<boolean>(false);
+
+    //active styling
+    const navActive = {
+        color: "black"
+    }
 
     return (
         <>
@@ -38,9 +43,9 @@ const Nav:React.FC = () => {
                         <div className={bar ? "w-4 h-0.5 bg-white":"w-4 h-0.5 bg-gray-800"}></div>
                     </div>
                     <nav className={bar?"bg-white h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[0] lg:z-auto translate-y-[110px] lg:translate-y-0 transition-all":"h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[-1] lg:z-auto translate-y-[-80px] lg:translate-y-0 transition-all bg-white"}>
-                        <a href="#" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black">Home</a>
-                        <a href="#" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black">Shop</a>
-                        <a href="#" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black">Contact</a>
+                        <NavLink to="/" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Home</NavLink>
+                        <NavLink to="/" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Shop</NavLink>
+                        <NavLink to="/contact" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Contact</NavLink>
                     </nav>
                 </div>
             </div>
