@@ -6,7 +6,7 @@ const Footer:React.FC = () => {
         <div className="w-screen font-serif flex flex-col items-center border-t-[1px] md:flex-row md:justify-center py-[60px] border-gray-100">
             <p className="text-gray-400 mb-2 md:mb-[0rem] md:mr-16">Sign up to our mailing list</p>
             <form>
-                <input className="border-2 border-r-0 border-gray-100 py-[8px] px-[8px] md:px-[12px] md:py-[8px] focus:border-blue-400 focus:outline-none" type="text" placeholder="Sing up now"/>
+                <input className="border-2 border-r-0 border-gray-100 py-[8px] px-[8px] md:px-[12px] md:py-[8px] focus:border-blue-400 focus:outline-none" type="email" placeholder="Sing up now"/>
                 <input className="font-sans font-bold text-white bg-black py-[10px] px-[10px] md:px-[12px] md:py-[10px]" type="submit" value="Sign Up" />
             </form>
         </div>
