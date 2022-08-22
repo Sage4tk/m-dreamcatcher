@@ -6,8 +6,8 @@ const Contact:React.FC<any> = () => {
     return (
         <>
         <Nav />
-        <div className="bg-[#212127] py-10 mb-8 lg:mb-16 lg:mx-8 lg:py-16">
-            <h1 className="font-serif text-white text-4xl text-center lg:text-5xl">Contact</h1>
+        <div className="bg-[#212127] py-10 mb-8 lg:mb-16 lg:mx-8 lg:py-15">
+            <h1 className="font-serif text-white text-[2.5rem] text-center">Contact</h1>
         </div>
         <div className="flex flex-col relative font-serif items-center justify-center h-[80px] mb-14">
             <h2 className="text-2xl lg:text-3xl">Stay In Touch</h2>
