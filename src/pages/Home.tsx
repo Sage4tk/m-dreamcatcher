@@ -32,7 +32,7 @@ const Home:React.FC = () => {
                 </div>
             </div>
             {/* featured products */}
-            <div className="lg:w-[1200px] lg:mx-auto">
+            <div className="lg:w-[900px] lg:mx-auto">
                 <div className="mb-10">
                     <h2 className="font-serif text-2xl md:text-3xl text-center">Featured Products</h2>
                     <div className="h-[16px] flex justify-center relative mb-16">
