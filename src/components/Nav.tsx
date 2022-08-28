@@ -36,16 +36,16 @@ const Nav:React.FC = () => {
                         </div>
                     </div>
                 </div>
-                <div className={bar ? "relative h-[60px] bg-[#000] flex items-center justify-center mt-[10px] lg:mt-0 cursor-pointer lg:cursor-default lg:bg-[#fff]":"relative h-[60px] flex items-center justify-center mt-[10px] lg:mt-0 cursor-pointer lg:cursor-default lg:bg-white"}  onClick={() => {setBar(!bar)}}>
+                <div className={bar ? "relative h-[80px] bg-[#000] flex items-center justify-center mt-[10px] lg:mt-0 cursor-pointer lg:cursor-default lg:bg-[#fff]":"relative h-[80px] flex items-center justify-center mt-[10px] lg:mt-0 cursor-pointer lg:cursor-default lg:bg-white"}  onClick={() => {setBar(!bar)}}>
                     <div className="space-y-1 lg:hidden">
                         <div className={bar ? "w-4 h-0.5 bg-white":"w-4 h-0.5 bg-gray-800"}></div>
                         <div className={bar ? "w-4 h-0.5 bg-white":"w-4 h-0.5 bg-gray-800"}></div>
                         <div className={bar ? "w-4 h-0.5 bg-white":"w-4 h-0.5 bg-gray-800"}></div>
                     </div>
-                    <nav className={bar?"bg-white h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[0] lg:z-auto translate-y-[110px] lg:translate-y-0 transition-all":"h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[-1] lg:z-auto translate-y-[-80px] lg:translate-y-0 transition-all bg-white"}>
-                        <NavLink to="/" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Home</NavLink>
-                        <NavLink to="/shop" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Shop</NavLink>
-                        <NavLink to="/contact" className="flex items-center px-4 py-3 lg:px-4 font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Contact</NavLink>
+                    <nav className={bar?"bg-white h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[0] lg:z-auto translate-y-[100px] lg:translate-y-0 transition-all":"h-auto lg:h-100 w-screen lg:w-auto absolute lg:flex-row lg:flex text-gray-400 p-[8px] lg:p-0 z-[-1] lg:z-auto translate-y-[-80px] lg:translate-y-0 transition-all bg-white"}>
+                        <NavLink to="/" className="flex items-center px-4 py-3 text-[0.75rem] lg:px-4 font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Home</NavLink>
+                        <NavLink to="/shop" className="flex items-center px-4 py-3 lg:px-4 text-[0.75rem] font-bold hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Shop</NavLink>
+                        <NavLink to="/contact" className="flex items-center px-4 py-3 lg:px-4 font-bold text-[0.75rem] hover:text-black" style={({ isActive }) => isActive ? navActive:{}}>Contact</NavLink>
                     </nav>
                 </div>
             </div>
