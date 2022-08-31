@@ -15,7 +15,7 @@ const Shop:React.FC = () => {
         </div>
         <div className="flex flex-col md:flex-row px-6 md:w-[1000px] mx-auto">
             <div className="mb-8 md:mr-12">
-                <div>
+                <div className="mb-10">
                     <div className="flex items-center justify-between mb-10">
                         <h3 className="font-serif text-xl">About Us</h3>
                         <span className="border-b border-gray-400 w-2/3"></span>
