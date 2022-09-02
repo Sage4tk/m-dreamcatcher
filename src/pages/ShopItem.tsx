@@ -32,7 +32,7 @@ const ShopItem:React.FC = () => {
         <div className="bg-[#212127] py-10 mb-8 lg:mb-16 lg:mx-8 lg:py-15">
             <h1 className="font-serif text-white text-[1.5rem] md:text-[2.5rem] text-center">{pageInfo ? pageInfo.product:"404 Product doesn't exist"}</h1>
         </div>
-        {pageInfo ? <Item name={pageInfo.name} img={pageInfo.img} price={pageInfo.price} />:<NotFound />}
+        {pageInfo ? <Item name={pageInfo.product} img={pageInfo.img} price={pageInfo.price} />:<NotFound />}
         <Footer />
         </>
     )
@@ -47,11 +47,11 @@ interface ItemProps {
 
 const Item:React.FC<ItemProps> = ({ name, img, price}) => {
     return (
-        <div>
-            <img src={img} alt={name} />
+        <div className="p-5">
+            <img className="aspect-square object-none" src={img} alt={name} />
             <div>
-                <h2>{name}</h2>
-                <p>{price} AED</p>
+                <h2 className="font-serif">{name}</h2>
+                <p className="font-serif">{price} AED</p>
             </div>
             <form>
                 <div>
