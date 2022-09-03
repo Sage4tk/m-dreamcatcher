@@ -46,6 +46,19 @@ interface ItemProps {
 }
 
 const Item:React.FC<ItemProps> = ({ name, img, price}) => {
+    //form handler
+    const [quantity, setQuantity] = useState(1);
+
+    //form handler listener
+    const formHandler = (quantity:any) => {
+        setQuantity(quantity.target.value);
+    }
+
+    //send to cart
+    const addCart = (e:any) => {
+        e.preventDefault();
+    }
+
     return (
         <div className="p-5">
             <img className="aspect-square object-none" src={img} alt={name} />
@@ -53,12 +66,12 @@ const Item:React.FC<ItemProps> = ({ name, img, price}) => {
                 <h2 className="font-serif">{name}</h2>
                 <p className="font-serif">{price} AED</p>
             </div>
-            <form>
+            <form onSubmit={addCart}>
                 <div>
-                    <label htmlFor="add">Quantity</label>
-                    <input name="add" type="number" />
+                    <label className="block font-serif font-grey-400" htmlFor="add">Quantity</label>
+                    <input name="add" type="number" value={quantity} min={1} max={5} onChange={formHandler}/>
                 </div>
-                <input value="Add to Cart" type="submit" />
+                <input value="Add to Cart" type="submit"/>
             </form>
         </div>
     )
